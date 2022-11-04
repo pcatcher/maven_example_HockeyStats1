@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: lsfusion.platform:api:5.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/lsfusion/platform/api/5.0-SNAPSHOT/api-5.0-20221102.144459-1395.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/lsfusion/platform/api/5.0-SNAPSHOT/api-5.0-20221102.144459-1395-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/lsfusion/platform/api/5.0-SNAPSHOT/api-5.0-20221102.144459-1395-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

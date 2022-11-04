@@ -1,0 +1,62 @@
+03 нояб. 2022 12:29:48,564 system - system - system ERROR SQLLogger - EnsureDB error: 
+org.postgresql.util.PSQLException: Something unusual has occurred to cause the driver to fail. Please report this exception.
+	at org.postgresql.Driver.connect(Driver.java:281)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at lsfusion.server.data.sql.adapter.PostgreDataAdapter.ensureDB(PostgreDataAdapter.java:77)
+	at lsfusion.server.data.sql.adapter.DataAdapter.ensure(DataAdapter.java:68)
+	at lsfusion.server.physics.exec.db.controller.manager.DBManager.initReflectionEvents(DBManager.java:209)
+	at lsfusion.server.physics.admin.reflection.controller.init.InitReflectionEventsTask.run(InitReflectionEventsTask.java:13)
+	at lsfusion.server.base.task.Task.proceed(Task.java:154)
+	at lsfusion.server.base.task.Task$1.aspectRun(Task.java:112)
+	at lsfusion.server.base.controller.thread.ExecutorFactory$AspectRunnable.run(ExecutorFactory.java:475)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at lsfusion.server.base.controller.thread.ExecutorFactory$ClosableDaemonThreadFactory$ClosableThread.run(ExecutorFactory.java:554)
+Caused by: java.lang.IllegalArgumentException: Empty string 'password'
+	at org.postgresql.shaded.com.ongres.scram.common.util.Preconditions.checkNotEmpty(Preconditions.java:56)
+	at org.postgresql.shaded.com.ongres.scram.client.ScramSession$ServerFirstProcessor.clientFinalProcessor(ScramSession.java:128)
+	at org.postgresql.jre7.sasl.ScramAuthenticator.processServerFirstMessage(ScramAuthenticator.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:684)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:141)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:458)
+	at org.postgresql.Driver.connect(Driver.java:260)
+	... 13 more
+03 нояб. 2022 12:51:08,047 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 44,5,RMI Runtime]: no private connection found
+03 нояб. 2022 12:54:28,917 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 43,5,RMI Runtime]: no private connection found
+03 нояб. 2022 12:54:28,921 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 40,5,RMI Runtime]: no private connection found
+03 нояб. 2022 14:07:32,559 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 40,5,RMI Runtime]: no private connection found
+03 нояб. 2022 14:07:32,562 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 42,5,RMI Runtime]: no private connection found
+03 нояб. 2022 14:26:55,371 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 67,5,RMI Runtime]: no private connection found
+03 нояб. 2022 14:40:17,203 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 45,5,RMI Runtime]: no private connection found
+03 нояб. 2022 14:41:45,498 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 40,5,RMI Runtime]: no private connection found
+03 нояб. 2022 14:44:22,827 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 52,5,RMI Runtime]: no private connection found
+03 нояб. 2022 14:45:03,317 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 52,5,RMI Runtime]: no private connection found
+03 нояб. 2022 15:08:22,977 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 42,5,RMI Runtime]: no private connection found
+03 нояб. 2022 15:13:05,295 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 49,5,RMI Runtime]: no private connection found
+03 нояб. 2022 15:13:37,439 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 40,5,RMI Runtime]: no private connection found
+03 нояб. 2022 15:13:37,441 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 49,5,RMI Runtime]: no private connection found
+03 нояб. 2022 15:57:17,832 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 42,5,RMI Runtime]: no private connection found
+03 нояб. 2022 15:57:17,836 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 39,5,RMI Runtime]: no private connection found
+03 нояб. 2022 15:57:17,837 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 41,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:07:14,898 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 54,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:07:14,899 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 50,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:07:14,899 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 53,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:32:28,557 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 43,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:32:28,558 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 40,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:32:28,561 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 45,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:43:25,545 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 39,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:43:25,563 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 41,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:43:25,564 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 40,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:47:52,561 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 39,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:48:03,883 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 40,5,RMI Runtime]: no private connection found
+03 нояб. 2022 16:48:03,886 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 43,5,RMI Runtime]: no private connection found
+03 нояб. 2022 17:15:35,766 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 51,5,RMI Runtime]: no private connection found
+03 нояб. 2022 17:15:35,783 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 54,5,RMI Runtime]: no private connection found
+03 нояб. 2022 17:42:55,609 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 45,5,RMI Runtime]: no private connection found
+03 нояб. 2022 17:42:55,611 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 43,5,RMI Runtime]: no private connection found
+03 нояб. 2022 17:42:55,612 admin - 127.0.0.1 - 127.0.0.1 ERROR SQLLogger - Failed to interrupt process Thread[RMI:HockeyStats.MainForm - 41,5,RMI Runtime]: no private connection found
