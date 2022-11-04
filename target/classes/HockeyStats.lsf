@@ -6,7 +6,7 @@ CLASS Team 'Команда';
 
 name 'Название команды' = DATA STRING[30] (Team) IN base;
 
-team = GROUP AGGR Team t BY name(t);
+nameTeam = GROUP AGGR Team t BY name(t);
 
 CLASS Game 'Игра';
 
